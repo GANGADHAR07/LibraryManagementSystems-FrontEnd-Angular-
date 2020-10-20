@@ -9,7 +9,8 @@ import { BooksService } from '../books.service';
   styleUrls: ['./update-books.component.css']
 })
 export class UpdateBooksComponent implements OnInit {
-  book : Books = {
+  book : any;
+  Books = {
    
     title:'',
     author:'',
@@ -41,6 +42,6 @@ export class UpdateBooksComponent implements OnInit {
       
     });
    
-  //  this.router.navigate(['/books']);
+   this.router.navigate(['/books']);
   }
 }
