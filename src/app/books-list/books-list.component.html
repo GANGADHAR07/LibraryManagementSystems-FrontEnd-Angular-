@@ -19,7 +19,7 @@
         </tr>
       </thead>
         <tbody>
-             <tr *ngFor="let book of books">
+             <tr *ngFor="let book of books | async">
                 <td class="hidden">{{book.title}}</td>
                 <td class="hidden">{{book.author}}</td>
                 <td class="hidden">{{book.genre}}</td>
